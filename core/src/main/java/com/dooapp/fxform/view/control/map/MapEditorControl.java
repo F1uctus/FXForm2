@@ -9,8 +9,8 @@ import javafx.beans.property.SimpleMapProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableMap;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.MessageInterpolator;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.MessageInterpolator;
 import java.util.Collections;
 import java.util.List;
 

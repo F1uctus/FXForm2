@@ -7,7 +7,7 @@ import org.hibernate.validator.constraints.Length;
 import org.junit.Rule;
 import org.junit.Test;
 
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * User: Antoine Mischler <antoine@dooapp.com>

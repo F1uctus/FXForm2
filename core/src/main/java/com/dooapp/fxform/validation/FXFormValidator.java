@@ -14,8 +14,8 @@ package com.dooapp.fxform.validation;
 
 import com.dooapp.fxform.model.Element;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.MessageInterpolator;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.MessageInterpolator;
 import java.util.List;
 
 /**

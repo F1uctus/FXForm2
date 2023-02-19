@@ -20,8 +20,8 @@ import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 
 /**
  * User: Antoine Mischler <antoine@dooapp.com>

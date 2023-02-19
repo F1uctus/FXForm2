@@ -21,7 +21,7 @@ import com.dooapp.fxform.view.FXFormSkin;
 import com.dooapp.fxform.view.NodeType;
 import javafx.collections.ListChangeListener;
 
-import javax.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolation;
 
 /**
  * Created at 27/09/12 13:51.<br>

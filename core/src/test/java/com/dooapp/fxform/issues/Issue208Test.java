@@ -17,7 +17,7 @@ import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 
-import javax.validation.constraints.Max;
+import jakarta.validation.constraints.Max;
 
 public class Issue208Test {
 

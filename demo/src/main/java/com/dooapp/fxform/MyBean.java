@@ -27,8 +27,8 @@ import javafx.collections.FXCollections;
 import javafx.scene.paint.Color;
 import org.hibernate.validator.constraints.Email;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.NotNull;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 

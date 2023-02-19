@@ -12,9 +12,9 @@
 
 package com.dooapp.fxform.view.factory.impl;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Path;
-import javax.validation.metadata.ConstraintDescriptor;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Path;
+import jakarta.validation.metadata.ConstraintDescriptor;
 import java.text.MessageFormat;
 import java.util.ResourceBundle;
 

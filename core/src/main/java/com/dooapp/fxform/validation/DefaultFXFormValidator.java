@@ -14,11 +14,11 @@ package com.dooapp.fxform.validation;
 import com.dooapp.fxform.model.Element;
 import com.dooapp.fxform.reflection.MultipleBeanSource;
 
-import javax.validation.*;
-import javax.validation.groups.Default;
-import javax.validation.metadata.BeanDescriptor;
-import javax.validation.metadata.ConstraintDescriptor;
-import javax.validation.metadata.PropertyDescriptor;
+import jakarta.validation.*;
+import jakarta.validation.groups.Default;
+import jakarta.validation.metadata.BeanDescriptor;
+import jakarta.validation.metadata.ConstraintDescriptor;
+import jakarta.validation.metadata.PropertyDescriptor;
 import java.lang.annotation.ElementType;
 import java.util.LinkedList;
 import java.util.List;

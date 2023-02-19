@@ -10,7 +10,7 @@ import org.hamcrest.core.IsNot;
 import org.junit.Rule;
 import org.junit.Test;
 
-import javax.validation.constraints.Max;
+import jakarta.validation.constraints.Max;
 
 import static org.junit.Assert.assertThat;
 import static org.junit.internal.matchers.IsCollectionContaining.hasItems;

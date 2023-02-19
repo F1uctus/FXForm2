@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.Size;
 
 import java.util.concurrent.ExecutionException;
 

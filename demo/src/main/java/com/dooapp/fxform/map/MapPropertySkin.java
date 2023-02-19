@@ -20,9 +20,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Node;
 import javafx.scene.control.*;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBoxBuilder;
+import javafx.scene.layout.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -85,13 +83,15 @@ public class MapPropertySkin implements Skin<MapPropertyControl> {
         final TextField valueTextField = new TextField();
         gridPane.setHgap(10);
         root.setCenter(gridPane);
-        root.setBottom(HBoxBuilder.create().children(keyTextField, valueTextField,
-                ButtonBuilder.create().text("Add").onAction(new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent actionEvent) {
-                        MapPropertySkin.this.control.getMap().put(keyTextField.getText(), valueTextField.getText());
-                    }
-                }).build()).build());
+        var button = new Button("Add");
+        button.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                MapPropertySkin.this.control.getMap().put(keyTextField.getText(), valueTextField.getText());
+            }
+        });
+        var hbox = new HBox(keyTextField, valueTextField,button);
+        root.setBottom(hbox);
     }
 
     private void configure(ObservableMap<String, String> stringStringObservableMap2) {
