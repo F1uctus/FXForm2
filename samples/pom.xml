@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>FXForm2</artifactId>
-        <groupId>com.dooapp.fxform2</groupId>
+        <artifactId>fxform2</artifactId>
+        <groupId>com.github.f1uctus.fxform2</groupId>
         <version>10.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -10,7 +10,7 @@
     <artifactId>samples</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.dooapp.fxform2</groupId>
+            <groupId>com.github.f1uctus.fxform2</groupId>
             <artifactId>core</artifactId>
             <version>10.0.0-SNAPSHOT</version>
         </dependency>

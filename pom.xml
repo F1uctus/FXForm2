@@ -20,17 +20,12 @@
         <module>samples</module>
         <module>extensions</module>
     </modules>
-    <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>7</version>
-    </parent>
-    <groupId>com.dooapp.fxform2</groupId>
-    <artifactId>FXForm2</artifactId>
+    <groupId>com.github.f1uctus.fxform2</groupId>
+    <artifactId>fxform2</artifactId>
     <version>10.0.0-SNAPSHOT</version>
     <name>FXForm 2</name>
     <description>Dynamic JavaFX 2.0 form generation</description>
-    <url>http://dooapp.github.com/FXForm2/</url>
+    <url>http://github.com/F1uctus/FXForm2/</url>
     <licenses>
         <license>
             <name>GNU Library or Lesser General Public License (LGPL)</name>
@@ -40,12 +35,12 @@
     </licenses>
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/dooApp/FXForm2/issues</url>
+        <url>https://github.com/f1uctus/FXForm2/issues</url>
     </issueManagement>
     <scm>
-        <url>git@github.com:dooApp/FXForm2.git</url>
-        <connection>scm:git:git@github.com:dooApp/FXForm2.git</connection>
-        <developerConnection>scm:git:git@github.com:dooApp/FXForm2.git</developerConnection>
+        <url>git@github.com:f1uctus/FXForm2.git</url>
+        <connection>scm:git:git@github.com:f1uctus/FXForm2.git</connection>
+        <developerConnection>scm:git:git@github.com:f1uctus/FXForm2.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     <developers>
@@ -54,6 +49,10 @@
             <email>antoine@dooapp.com</email>
             <organization>dooApp</organization>
             <organizationUrl>www.dooapp.com</organizationUrl>
+        </developer>
+        <developer>
+            <name>Ilya Nikitin</name>
+            <email>ilya.i.nikitin@proton.me</email>
         </developer>
     </developers>
     <ciManagement>
@@ -66,52 +65,13 @@
             <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
         </repository>
     </repositories>
-    <properties >
+    <properties>
         <javafx.version>19</javafx.version>
         <javafx.maven.plugin.version>0.0.6</javafx.maven.plugin.version>
     </properties>
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.5.1</version>
-                <configuration>
-                    <goals>deploy</goals>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>com.github.github</groupId>
-                <artifactId>site-maven-plugin</artifactId>
-                <version>0.9</version>
-                <configuration>
-                    <message>Creating site for ${project.artifactId}, ${project.version}</message>
-                    <!-- this does the trick to place every module in the correct subfolder -->
-                    <path>${project.distributionManagement.site.url}</path>
-                    <merge>true</merge>
-                    <repositoryName>FXForm2</repositoryName>
-                    <repositoryOwner>dooapp</repositoryOwner>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>github-site</id>
-                        <goals>
-                            <goal>site</goal>
-                        </goals>
-                        <phase>site-deploy</phase>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-                <version>3.3</version>
-                <configuration>
-                    <skip>true</skip>
-                    <skipDeploy>true</skipDeploy>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
@@ -141,11 +101,11 @@
         </pluginManagement>
     </build>
     <distributionManagement>
-        <site>
-            <id>github-pages-site</id>
-            <name>Deployment through GitHub's site deployment plugin</name>
-            <url>${project.version}/site</url>
-        </site>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/f1uctus/fxform2</url>
+        </repository>
     </distributionManagement>
     <reporting>
         <plugins>
